@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d57f4de3-fe2e-4ed8-ace1-8837349d2b21">
+	<property name="ireport.zoom" value="1.7715610000000084"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     petugas.`id_petugas` AS petugas_id_petugas,
+     petugas.`nama` AS petugas_nama,
+     petugas.`password` AS petugas_password,
+     petugas.`jk_petugas` AS petugas_jk_petugas,
+     petugas.`telp_petugas` AS petugas_telp_petugas,
+     petugas.`alamat_petugas` AS petugas_alamat_petugas
+FROM
+     `petugas` petugas]]>
+	</queryString>
+	<field name="petugas_id_petugas" class="java.lang.String"/>
+	<field name="petugas_nama" class="java.lang.String"/>
+	<field name="petugas_jk_petugas" class="java.lang.String"/>
+	<field name="petugas_telp_petugas" class="java.lang.String"/>
+	<field name="petugas_alamat_petugas" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="42" y="0" width="513" height="29"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERPUSTAKAAN SMAN 1 CIMARAGAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="42" y="29" width="513" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JL. RAYA CIMARAGAS NO.139 B CIMARAGAS, Cimaragas, Kec. Cimaragas, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="42" y="45" width="513" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kab. Ciamis. Prov. Jawa Barat.  Telepon: (0265) 2733175]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="20d2b4b8-17b2-45d0-bed6-583b84204744" x="0" y="90" width="555" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="c4e303bb-92b3-4ff5-906b-187f0852d57b" x="0" y="0" width="132" height="72"/>
+				<imageExpression><![CDATA["E:\\Kuliah\\KP\\Program\\Perpustakaan Smansagas\\src\\image\\logo.jpeg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="0" y="0" width="555" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b04026f0-f160-4cb9-84cb-434eda835415" x="387" y="32" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[Cimaragas,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="4f5fa060-b949-44b8-99a9-8f9423292009" x="442" y="32" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="432" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="232" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="132" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="32" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="332" y="0" width="100" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="b9154752-09dd-45e5-8314-ecacfed9ef03" x="32" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="247d96cd-2eb4-4a32-8fcf-a3d83c0d8720" x="132" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e0961fa-7f40-4060-83a3-31944f854a91" x="232" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d969e683-26d5-4357-bd01-5e47ee850861" x="332" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b887d26-b35f-4a94-8c6b-24313255f8da" x="432" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="32" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="132" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="232" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="332" y="0" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="865c8fad-30de-441d-9789-738b04ec5497" x="432" y="0" width="100" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="cae43184-b1d4-4048-9eb5-8c4ca1f199d2" x="42" y="0" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{petugas_id_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0accc984-6e5b-49f5-aa9b-6f4d77aa67d0" x="142" y="0" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{petugas_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cfed79a2-6853-405c-9ef2-ba1cb9bfb1b4" x="242" y="0" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{petugas_jk_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b4ebd81f-042c-4a10-ba0e-cc5f540d5cb2" x="342" y="0" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{petugas_telp_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7aa2abb4-5667-4799-a05e-104c080f3b72" x="442" y="0" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{petugas_alamat_petugas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="08a348ef-c7ea-447b-81e1-b28021111047" x="432" y="34" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="08a348ef-c7ea-447b-81e1-b28021111047" x="432" y="54" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c9b17ee2-984a-42d1-b48d-d8aca9c99fc4" x="397" y="127" width="135" height="20"/>
+				<textElement/>
+				<text><![CDATA[Rohmat Slamet, S.Pd., M.Pd]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

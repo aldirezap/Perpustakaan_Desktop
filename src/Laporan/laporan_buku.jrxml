@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9cd4f8d8-6ee4-4182-9592-1988f2e7281f">
+	<property name="ireport.zoom" value="1.7715610000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     buku.`kode_buku` AS buku_kode_buku,
+     buku.`judul` AS buku_judul,
+     buku.`penerbit` AS buku_penerbit,
+     buku.`tahun_terbit` AS buku_tahun_terbit,
+     buku.`penulis` AS buku_penulis,
+     buku.`kategori` AS buku_kategori,
+     buku.`isbn` AS buku_isbn,
+     buku.`jumlah` AS buku_jumlah
+FROM
+     `buku` buku]]>
+	</queryString>
+	<field name="buku_kode_buku" class="java.lang.String"/>
+	<field name="buku_judul" class="java.lang.String"/>
+	<field name="buku_penerbit" class="java.lang.String"/>
+	<field name="buku_tahun_terbit" class="java.lang.Integer"/>
+	<field name="buku_penulis" class="java.lang.String"/>
+	<field name="buku_kategori" class="java.lang.String"/>
+	<field name="buku_isbn" class="java.lang.String"/>
+	<field name="buku_jumlah" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="177" y="45" width="513" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kab. Ciamis. Prov. Jawa Barat.  Telepon: (0265) 2733175]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="177" y="0" width="513" height="29"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERPUSTAKAAN SMAN 1 CIMARAGAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="177" y="29" width="513" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JL. RAYA CIMARAGAS NO.139 B CIMARAGAS, Cimaragas, Kec. Cimaragas, ]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="1bd29cbd-5f2b-4ad0-835b-9ac835fa774a" x="93" y="0" width="162" height="79"/>
+				<imageExpression><![CDATA["E:\\Kuliah\\KP\\Program\\Perpustakaan Smansagas\\src\\image\\logo.jpeg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="4f5fa060-b949-44b8-99a9-8f9423292009" x="610" y="24" width="90" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="285d2e73-8b96-4b83-9530-d7027262466b" x="135" y="0" width="555" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b04026f0-f160-4cb9-84cb-434eda835415" x="555" y="24" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[Cimaragas,]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="12" y="3" width="91" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="103" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="203" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="303" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="403" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="503" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="603" y="3" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="703" y="3" width="89" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="3b594217-fb82-4a14-adb4-a7334e328679" x="12" y="3" width="91" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2233b19a-bb82-448a-941c-cba1cdf024ff" x="103" y="3" width="100" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0e432eab-3490-4444-88e8-c7315ddcd3a7" x="203" y="3" width="100" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="08f8d41d-88a4-4e45-a33a-f7722e8d2bc5" x="303" y="3" width="100" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun Terbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82171df8-728b-464c-b76b-bb47cb8ae837" x="403" y="3" width="100" height="17"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penulis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b5a95930-1a9d-4664-b888-4b1d36bb9702" x="503" y="3" width="100" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a192172-efb2-44c1-bcf7-2954503a5180" x="603" y="3" width="100" height="18"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="23c585d1-d8e5-42c2-ae43-c077ae8bf206" x="703" y="3" width="89" height="17"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="603" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="303" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="103" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="703" y="1" width="89" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="503" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="12" y="1" width="91" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="403" y="1" width="100" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="37edddd5-c0e2-4bf9-9b97-681d93d1fa29" x="203" y="1" width="100" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="7992cbbd-4554-4f87-a000-45da4418495a" x="22" y="1" width="81" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_kode_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a2cab8dc-2fd7-49b9-9a33-b9af9e11f63d" x="113" y="3" width="90" height="18"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9f838ea5-b2a5-4c98-a8f0-3d3aeb1add82" x="213" y="3" width="90" height="18"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e502d0cf-ee55-4f1e-938f-aa7677c18dd8" x="313" y="3" width="90" height="18"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_tahun_terbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ee7f37fa-9087-4ca0-a421-f980140d433d" x="413" y="3" width="90" height="17"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_penulis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="52a7378d-f51c-46cb-a623-2bba6aaa4a22" x="513" y="3" width="90" height="18"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0a35cd80-cb1e-4753-a495-525029d92f3a" x="613" y="3" width="90" height="18"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_isbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f51037da-35eb-498c-855f-d1e7d0977803" x="713" y="3" width="79" height="17"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{buku_jumlah}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="08a348ef-c7ea-447b-81e1-b28021111047" x="690" y="20" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="08a348ef-c7ea-447b-81e1-b28021111047" x="690" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c9b17ee2-984a-42d1-b48d-d8aca9c99fc4" x="657" y="95" width="135" height="20"/>
+				<textElement/>
+				<text><![CDATA[Rohmat Slamet, S.Pd., M.Pd]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
